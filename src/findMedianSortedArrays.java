@@ -18,24 +18,36 @@ class findMedianSortedArrays {
         if (nums1.length > nums2.length){
             return findMedian(nums1, nums2);
         }
-
-        int m = nums1.length;
-        int n = nums2.length;
+        // nums1 = [1,3] nums2 = [2]
+        int m = nums1.length; // m = 2
+        int n = nums2.length; // n = 1
         int left = 0;
-        int right = m;
+        int right = m; // right = 2
         int part1, part2;
         int maxLeft1, minRight1, maxLeft2, minRight2;
 
-        while (left <= right){
-            part1 = (left + right) / 2;
-            part2 = (m + n + 1) / 2 - part1;
+        while (left <= right){ // 0 <= 2
+            part1 = (left + right) / 2; // part1 = 1
+            part2 = (m + n + 1) / 2 - part1; // part2 = 3
 
             maxLeft1 = (part1 == 0) ? Integer.MIN_VALUE : nums1[part1 - 1];
             minRight1 = (part1 == m) ? Integer.MAX_VALUE : nums1[part1];
             maxLeft2 = (part2 == 0) ? Integer.MIN_VALUE : nums2[part2 - 1];
             minRight2 = (part2 == n) ? Integer.MAX_VALUE : nums2[part2];
 
+            if (maxLeft1 <= minRight2 && maxLeft2 <= minRight1) {
+                if ((m + n) % 2 == 0) {
+                    return (Math.max(maxLeft1, maxLeft2) + Math.min(minRight1, minRight2)) / 2.0;
+                } else {
+                    return Math.max(maxLeft1, maxLeft2);
+                }
+            } else if (maxLeft1 > minRight2) {
+                right = part1 - 1;
+            } else {
+                left = part1 + 1;
+            }
         }
 
+        throw new IllegalArgumentException("Input arrays are not sorted.");
     }
 }
