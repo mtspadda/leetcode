@@ -22,6 +22,7 @@ Here is a list of problems I've solved so far:
 9. [Top interview 150, 121. Best time to buy and sell stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/1096668715/?envType=study-plan-v2&envId=top-interview-150)
 10. [Top interview 150, 122. Best time to buy and sell stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/?envType=study-plan-v2&envId=top-interview-150)
 11. [Top interview 150, 55. Jump game](https://leetcode.com/problems/jump-game/?envType=study-plan-v2&envId=top-interview-150)
+12. [Top interview 150, 13. Roman to integer](https://leetcode.com/problems/roman-to-integer/?envType=study-plan-v2&envId=top-interview-150)
 
 
 ## License
