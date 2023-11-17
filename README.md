@@ -24,6 +24,7 @@ Here is a list of problems I've solved so far:
 11. [Top interview 150, 55. Jump game](https://leetcode.com/problems/jump-game/?envType=study-plan-v2&envId=top-interview-150)
 12. [Top interview 150, 13. Roman to integer](https://leetcode.com/problems/roman-to-integer/?envType=study-plan-v2&envId=top-interview-150)
 13. [Top interview 150, 58. Length of last word](https://leetcode.com/problems/length-of-last-word/?envType=study-plan-v2&envId=top-interview-150)
+14. [Top interview 150, 383. Ransom note](https://leetcode.com/problems/ransom-note/?envType=study-plan-v2&envId=top-interview-150)
 
 
 ## License
