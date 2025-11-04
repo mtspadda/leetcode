@@ -1,12 +1,14 @@
+
+
 public class Main {
     public static void main(String[] args) {
+        findMedianSortedArrays solution = new findMedianSortedArrays();
 
-        int[] nums = {2, 7, 11, 15};
-        int target = 9;
-        int[] result = TwoSum.twoSum(nums, target);
+        Object solution1;
+        int[] nums1_ex1 = {1, 3};
+        int[] nums2_ex1 = {2};
+        solution1 = solution.findMedian(nums1_ex1, nums2_ex1);
+        System.out.println(solution1);
 
-        for (int num : result) {
-            System.out.print(num + " ");
-        }
     }
 }
