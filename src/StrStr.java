@@ -2,7 +2,7 @@ public class StrStr {
     public int strStr(String haystack, String needle) {
         int window = needle.length();
 
-        while (haystack.length() < needle.length()) {
+        if (haystack.length() < needle.length()) {
             return -1;
         }
 
