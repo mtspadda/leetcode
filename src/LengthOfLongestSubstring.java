@@ -1,8 +1,7 @@
 import java.util.HashSet;
 
 public class LengthOfLongestSubstring {
-    //Slinding window + HashSet
-    // could use hashMap
+
     public int lengthOfLongestSubstring(String s) {
         int head = 0;
         int maxLength = 0;
