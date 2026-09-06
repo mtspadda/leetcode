@@ -1,14 +1,25 @@
-
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        findMedianSortedArrays solution = new findMedianSortedArrays();
 
-        Object solution1;
-        int[] nums1_ex1 = {1, 3};
-        int[] nums2_ex1 = {2};
-        solution1 = solution.findMedian(nums1_ex1, nums2_ex1);
-        System.out.println(solution1);
+        String s1 = "aab";
+        String s2 = "nagaram";
 
+    }
+
+    public static boolean canConstruct(String ransomNote, String magazine) {
+        Map<Character, Integer> map = new HashMap<>();
+
+        for (char r: ransomNote.toCharArray()){
+            map.put(r, map.getOrDefault(r, 0) + 1);
+        }
+        for (char r: magazine.toCharArray()){
+            map.put(r, map.getOrDefault(r, 0) - 1);
+
+            return map.get(r) >= 0;
+        }
+        return false;
     }
 }
